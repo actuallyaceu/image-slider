@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Простой зацикленный слайдер изображений на HTML, CSS и JavaScript">
+  <title>Горизонты — слайдер изображений</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="intro">
+      <p class="eyebrow">Небольшая коллекция</p>
+      <h1>Горизонты</h1>
+      <p class="subtitle">Пять мест, в которых хочется задержаться чуть дольше.</p>
+    </header>
+
+    <section class="slider" aria-label="Слайдер изображений">
+      <div class="image-frame">
+        <img
+          class="slide-image"
+          src="images/mountains.svg"
+          alt="Горное озеро на рассвете"
+        >
+        <div class="image-overlay" aria-hidden="true"></div>
+
+        <div class="slide-caption" aria-live="polite">
+          <p class="slide-number">01</p>
+          <div>
+            <h2 class="slide-title">Тихий рассвет</h2>
+            <p class="slide-place">Алтайские горы</p>
+          </div>
+        </div>
+
+        <button class="nav-button nav-button--prev" type="button" aria-label="Предыдущее изображение">
+          <span aria-hidden="true">←</span>
+        </button>
+        <button class="nav-button nav-button--next" type="button" aria-label="Следующее изображение">
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+
+      <footer class="slider-footer">
+        <p class="counter" aria-live="polite">Изображение 1 из 5</p>
+        <div class="progress" aria-hidden="true">
+          <span class="progress-bar"></span>
+        </div>
+        <p class="hint">Используйте кнопки или клавиши ← →</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

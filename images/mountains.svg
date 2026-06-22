@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Горное озеро на рассвете</title>
+  <desc id="desc">Стилизованный пейзаж с солнцем, горами и отражением в озере</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffb67a"/><stop offset=".55" stop-color="#ffd6a3"/><stop offset="1" stop-color="#71909b"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#71909b"/><stop offset="1" stop-color="#173f49"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v530H0z"/><circle cx="1170" cy="230" r="92" fill="#fff5b8" opacity=".88"/>
+  <path fill="#526d72" d="M0 525 250 273l141 135 210-228 222 274 166-182 284 253z"/>
+  <path fill="#314f55" d="m0 534 326-213 167 170 210-208 266 251 241-176 390 185v78H0z"/>
+  <path fill="url(#water)" d="M0 527h1600v373H0z"/><path fill="#dce6d7" opacity=".24" d="M155 612h1250v8H155zm217 69h785v6H372zm-91 87h1013v5H281z"/>
+  <path fill="#173139" opacity=".72" d="m0 875 310-152 260 91 297-74 300 122 261-74 172 71v41H0z"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Скалистый берег</title><desc id="desc">Стилизованный морской берег с утёсами</desc>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#78cddd"/><stop offset="1" stop-color="#d8f2e5"/></linearGradient><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#238fa5"/><stop offset="1" stop-color="#064b68"/></linearGradient></defs>
+  <path fill="url(#s)" d="M0 0h1600v500H0z"/><circle cx="260" cy="190" r="92" fill="#fff7c6"/>
+  <path fill="url(#w)" d="M0 430h1600v470H0z"/><path fill="#fff" opacity=".6" d="M0 540q190-60 390 0t395 0 410 0 405 0v18q-200-54-405 0t-410 0-395 0-390 0z"/>
+  <path fill="#334b46" d="M0 233 230 352l139 196 204 121 115 231H0zm1600 118-180 33-107 198-196 115-94 203h577z"/>
+  <path fill="#90a46e" d="M0 233 233 351l-67 40L0 334zm1600 118-178 33-42 78 220-44z"/>
+  <path fill="#d5d0ae" d="M573 669q219-64 450 28l-87 203H688z"/>
+</svg>

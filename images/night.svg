@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ночное озеро</title><desc id="desc">Стилизованное звёздное небо над тёмным озером</desc>
+  <defs><linearGradient id="n" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0c1138"/><stop offset=".62" stop-color="#38366c"/><stop offset="1" stop-color="#d1787c"/></linearGradient><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#252c58"/><stop offset="1" stop-color="#080f27"/></linearGradient></defs>
+  <path fill="url(#n)" d="M0 0h1600v560H0z"/><circle cx="1225" cy="190" r="92" fill="#f4edce"/>
+  <g fill="#fff" opacity=".8"><circle cx="150" cy="140" r="4"/><circle cx="330" cy="220" r="3"/><circle cx="510" cy="105" r="5"/><circle cx="720" cy="250" r="3"/><circle cx="890" cy="125" r="4"/><circle cx="1050" cy="310" r="3"/><circle cx="1430" cy="115" r="4"/><circle cx="1350" cy="330" r="3"/></g>
+  <path fill="#141b35" d="m0 560 260-250 203 208 219-147 216 183 224-230 285 236z"/>
+  <path fill="url(#w)" d="M0 548h1600v352H0z"/><path fill="#ece2cf" opacity=".28" d="M1035 615h375v8h-375zm50 55h275v6h-275zm-75 68h420v5h-420z"/>
+  <path fill="#080f20" d="M0 823q370-154 770-27t830-44v148H0z"/>
+</svg>
