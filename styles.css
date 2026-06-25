@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  width: 700px;
-  max-width: 90%;
+  width: 780px;
+  max-width: 94%;
   margin: 40px auto;
   text-align: center;
 }
@@ -31,7 +31,7 @@ h1 {
 
 #slider-image {
   width: 100%;
-  height: 380px;
+  height: 430px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid #d1d1d1;
@@ -64,7 +64,7 @@ button:hover {
 
 @media (max-width: 600px) {
   #slider-image {
-    height: 260px;
+    height: 290px;
   }
 
   button {
