@@ -1,74 +1,40 @@
-const slides = [
-  {
-    src: "images/mountains.svg",
-    alt: "Горное озеро на рассвете",
-    title: "Тихий рассвет",
-    place: "Алтайские горы",
-  },
-  {
-    src: "images/coast.svg",
-    alt: "Скалистый берег и синее море",
-    title: "Солёный ветер",
-    place: "Северное побережье",
-  },
-  {
-    src: "images/desert.svg",
-    alt: "Песчаные дюны в лучах заката",
-    title: "Золотой час",
-    place: "Песчаные дюны",
-  },
-  {
-    src: "images/forest.svg",
-    alt: "Туман в густом хвойном лесу",
-    title: "Утро в лесу",
-    place: "Северная тайга",
-  },
-  {
-    src: "images/night.svg",
-    alt: "Ночное небо над спокойным озером",
-    title: "После полуночи",
-    place: "Озёрный край",
-  },
+const images = [
+  "images/mountains.svg",
+  "images/coast.svg",
+  "images/desert.svg",
+  "images/forest.svg",
+  "images/night.svg"
 ];
 
-const image = document.querySelector(".slide-image");
-const title = document.querySelector(".slide-title");
-const place = document.querySelector(".slide-place");
-const number = document.querySelector(".slide-number");
-const counter = document.querySelector(".counter");
-const progressBar = document.querySelector(".progress-bar");
-const previousButton = document.querySelector(".nav-button--prev");
-const nextButton = document.querySelector(".nav-button--next");
+const image = document.getElementById("slider-image");
+const counter = document.getElementById("counter");
+const nextButton = document.getElementById("next");
+const prevButton = document.getElementById("prev");
 
-let currentIndex = 0;
+let currentImage = 0;
 
-function showSlide(index) {
-  currentIndex = (index + slides.length) % slides.length;
-  const slide = slides[currentIndex];
-  const visibleNumber = currentIndex + 1;
-
-  image.src = slide.src;
-  image.alt = slide.alt;
-  title.textContent = slide.title;
-  place.textContent = slide.place;
-  number.textContent = String(visibleNumber).padStart(2, "0");
-  counter.textContent = `Изображение ${visibleNumber} из ${slides.length}`;
-  progressBar.style.width = `${(visibleNumber / slides.length) * 100}%`;
-
-  image.classList.remove("is-changing");
-  void image.offsetWidth;
-  image.classList.add("is-changing");
+function showImage() {
+  image.src = images[currentImage];
+  image.alt = "Изображение " + (currentImage + 1);
+  counter.textContent = "Изображение " + (currentImage + 1) + " из " + images.length;
 }
 
-nextButton.addEventListener("click", () => showSlide(currentIndex + 1));
-previousButton.addEventListener("click", () => showSlide(currentIndex - 1));
+nextButton.addEventListener("click", function () {
+  currentImage++;
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowRight") {
-    showSlide(currentIndex + 1);
+  if (currentImage >= images.length) {
+    currentImage = 0;
   }
 
-  if (event.key === "ArrowLeft") {
-    showSlide(currentIndex - 1);
+  showImage();
+});
+
+prevButton.addEventListener("click", function () {
+  currentImage--;
+
+  if (currentImage < 0) {
+    currentImage = images.length - 1;
   }
+
+  showImage();
 });
