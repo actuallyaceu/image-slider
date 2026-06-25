@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Хвойный лес в тумане</title><desc id="desc">Стилизованные ели, уходящие в утренний туман</desc>
-  <defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#cfe3c8"/><stop offset="1" stop-color="#607e6f"/></linearGradient></defs>
-  <path fill="url(#b)" d="M0 0h1600v900H0z"/>
-  <g fill="#78988a" opacity=".55"><path d="m120 650 180-440 180 440z"/><path d="m470 690 205-520 205 520z"/><path d="m950 660 170-430 170 430z"/><path d="m1200 700 220-550 220 550z"/></g>
-  <g fill="#385e52"><path d="m-80 900 275-680 275 680z"/><path d="m340 900 310-720 310 720z"/><path d="m860 900 270-670 270 670z"/><path d="m1240 900 230-600 230 600z"/></g>
-  <g fill="#173c35"><path d="m40 900 210-510 210 510z"/><path d="m650 900 245-600 245 600z"/><path d="m1200 900 195-490 195 490z"/></g>
-  <path fill="#f2f5e9" opacity=".22" d="M0 418q410-90 820 13t780-9v146q-420 86-810-14T0 572z"/>
-</svg>

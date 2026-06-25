@@ -1,9 +1,9 @@
 const images = [
-  "images/mountains.svg",
-  "images/coast.svg",
-  "images/desert.svg",
-  "images/forest.svg",
-  "images/night.svg"
+  "https://picsum.photos/id/1015/1000/650",
+  "https://picsum.photos/id/1016/1000/650",
+  "https://picsum.photos/id/1020/1000/650",
+  "https://picsum.photos/id/1039/1000/650",
+  "https://picsum.photos/id/1043/1000/650"
 ];
 
 const image = document.getElementById("slider-image");
